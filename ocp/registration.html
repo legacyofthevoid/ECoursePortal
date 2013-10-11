@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Registration</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="ocpstyles.css"/>
+	</head>
+
+	<body>
+		<div class="registrationbox">
+			<form class="form-inline">
+			  <fieldset>
+				<legend>Registration</legend>
+				<div class="subdivision">
+					<label>Sign up as</label>
+					<select class="span2">
+						<option>Student</option>
+						<option>Faculty</option>
+					</select>
+					<label>&nbsp&nbsp&nbspCourse</label>
+					<select class="span4">
+						<option>BS Computer Engineering</option>
+						<option>BS Electronics and Communications Engineering</option>
+					</select>
+				</div>
+				<div class="subdivision">
+					<label>First Name</label>
+					<input type="text" placeholder="First name">
+					<label>&nbsp&nbsp&nbspLast Name</label>
+					<input type="text" placeholder="Last name"></br>
+				</div>
+				<div class="subdivision">
+					<label class="radio">
+						<input type="radio" name="gender" id="male" value="male" checked>
+						Male&nbsp&nbsp&nbsp
+					</label>
+					<label class="radio">
+						<input type="radio" name="gender" id="female" value="female">
+						Female&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					</label>
+					<label>Contact Number</label>
+					<input class="span2" type="text" placeholder="Contact Number">
+				</div>
+				<div class="subdivision">
+					<label>Email Address</label>
+					<input class="span3" type="text" placeholder="email address">
+					<label>&nbsp&nbsp&nbspUsername</label>
+					<input class="span2" type="text" placeholder="username">
+				</div>
+				<div class="subdivision">
+					<label>Password</label>
+					<input class="span3" type="password" placeholder="password">
+					<label>&nbsp&nbsp&nbspConfirm password</label>
+					<input class="span3" type="password" placeholder="password">
+				</div>
+				<div class="btn-group">
+				<button type="submit" class="btn btn-primary btn-warning">Register</button>
+				<button type="submit" class="btn btn-primary btn-danger">Cancel</button>
+				</div>
+			  </fieldset>
+			</form>
+		</div>
+	</body>
+</html>
