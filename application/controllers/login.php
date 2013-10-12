@@ -4,10 +4,12 @@
 class login extends CI_Controller{
 
 	public function index(){
+
 		$this->session->sess_destroy();
 		$data['title'] = "Welcome to Online Course Portal";
 		$data['main_content'] = "login";
 		$this->load->view('includes/template',$data);
+		
 	}
 
 	public function validate_credentials(){

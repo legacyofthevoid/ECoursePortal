@@ -39,7 +39,7 @@ class user_model extends CI_Model{
 				"email"=>$this->input->post('email'),
 				"user_type_id"=>$this->input->post('user_type'),
 				"course_id"=>$this->input->post('course'),
-				"status"=>$status
+				"status_id"=>$status
 
 			);	
 
@@ -47,7 +47,6 @@ class user_model extends CI_Model{
 		
 		$query = $this->db->get_where('user', array('username' => $this->input->post('username')));
 		$id = $query->result();
-
 
 		$personal_info = array(
 

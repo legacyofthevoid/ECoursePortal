@@ -6,7 +6,6 @@
  	$this->load->view('includes/header',$title)
  ?>
 <?php 
-
 	if(isset($data)){		
 		$this->load->view($main_content,$data); 
 	}else{
