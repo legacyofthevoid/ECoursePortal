@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-
-
-
-
-
-<button id = "show_table" class="btn">click me</button>
-
-
-<div id = "user_div_table" style="width:50%">
-
-	
-
-
-</div>
-=======
-<html>
-	<head>
-		<title>Home-Online Course Portal</title>
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="ocpstyles.css"/>
-	</head>
-	
-	<body>
 		<div id="header" class="headerstyle">
 			<span>
 				<img src="<?php echo base_url();?>images/e-course.png" alt="Course Portal" class="homelogo"/>
@@ -52,6 +28,3 @@
 				<li><a href="#">Library</a></li>
 			</ul>
 		<div>
-	</body>
-</html>
->>>>>>> 74d66183887b2d22abb1dc756f8a303befe3a4a0
