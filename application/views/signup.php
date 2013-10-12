@@ -5,12 +5,12 @@
 				<legend>Registration</legend>
 				<div class="subdivision">
 					<label>Sign up as</label>
-					<select class="span2">
+					<select name="user_type" class="span2">
 						<option value = "1">Student</option>
 						<option value = "2">Faculty</option>
 					</select>
 					<label>&nbsp&nbsp&nbspCourse</label>
-					<select class="span4">
+					<select name="course" class="span4">
 
 						<?php
 							foreach ($courses as $row) {
@@ -37,7 +37,7 @@
 						Female&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 					</label>
 					<label>Contact Number</label>
-					<input class="span2" type="text" placeholder="Contact Number">
+					<input class="span2" type="text" name="contact_number" placeholder="Contact Number">
 				</div>
 				<div class="subdivision">
 					<label>Email Address</label>

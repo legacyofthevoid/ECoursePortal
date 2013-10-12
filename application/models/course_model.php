@@ -9,10 +9,4 @@ class course_model extends CI_Model{
 		$query = $this->db->get('course');
 		return $query->result();
 	}
-
-
-
-
-
-
 }
