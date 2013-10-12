@@ -11,7 +11,9 @@ class user_model extends CI_Model{
 		$this->db->where('password', md5($this->input->post('password')));
 		$query = $this->db->get('user');
 
-		if($query->num_rows == 1){
+		$res = $query->result();
+
+		if($query->num_rows == 1 && $res[0]->status == 1 ){
 			return true;
 		}else{
 			return false;
@@ -22,13 +24,22 @@ class user_model extends CI_Model{
 
 	function create_member(){
 
+
+		$status = 0;
+
+		if($this->input->post('user_type') == 1){
+			$status =1;
+		}
+
+
 		$user_data = array(
 
 				"username"=>$this->input->post('username'),
 				"password"=>md5($this->input->post('password')),
 				"email"=>$this->input->post('email'),
 				"user_type_id"=>$this->input->post('user_type'),
-				"course_id"=>$this->input->post('course')
+				"course_id"=>$this->input->post('course'),
+				"status"=>$status
 
 			);	
 
