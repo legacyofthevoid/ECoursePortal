@@ -4,12 +4,12 @@
 			  <fieldset>
 				<legend>Registration</legend>
 				<div class="subdivision">
-					<label>Sign up as</label>
+					<label>Sign up as*</label>
 					<select name="user_type" class="span2">
 						<option value = "1">Student</option>
 						<option value = "2">Faculty</option>
 					</select>
-					<label>&nbsp&nbsp&nbspCourse</label>
+					<label>&nbsp&nbsp&nbspCourse*</label>
 					<select name="course" class="span4">
 
 						<?php
@@ -21,9 +21,9 @@
 					</select>
 				</div>
 				<div class="subdivision">
-					<label>First Name</label>
+					<label>First Name*</label>
 					<?php echo form_input('first_name', set_value('first_name',''),'placeholder="First Name"'); ?>
-					<label>&nbsp&nbsp&nbspLast Name</label>
+					<label>&nbsp&nbsp&nbspLast Name*</label>
 					<?php echo form_input('last_name', set_value('last_name',''),'placeholder="Last Name"'); ?>
 					</br>
 				</div>
@@ -40,20 +40,20 @@
 					<input class="span2" type="text" name="contact_number" placeholder="Contact Number">
 				</div>
 				<div class="subdivision">
-					<label>Email Address</label>
+					<label>Email Address*</label>
 					<?php echo form_input('email', set_value('email',''),'placeholder="Email"'); ?>
-					<label>&nbsp&nbsp&nbspUsername</label>
+					<label>&nbsp&nbsp&nbspUsername*</label>
 					<?php echo form_input('username', set_value('username',''),'placeholder="Username"'); ?>
 				</div>
 				<div class="subdivision">
-					<label>Password</label>
+					<label>Password*</label>
 					<input class="span3" type="password" name="password" placeholder="password">
-					<label>&nbsp&nbsp&nbspConfirm password</label>
+					<label>&nbsp&nbsp&nbspConfirm password*</label>
 					<input class="span3" type="password" name="password2" placeholder="password">
 				</div>
 				<div class="btn-group">
-				<button type="submit" class="btn btn-primary btn-warning">Register</button>
-				<button type="submit" class="btn btn-primary btn-danger">Cancel</button>
+				<button type="submit" class="btn btn-primary">Register</button>
+				<button type="submit" class="btn btn-primary">Cancel</button>
 				</div>
 			  </fieldset>
 			</form>

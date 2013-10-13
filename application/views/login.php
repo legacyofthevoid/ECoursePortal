@@ -17,14 +17,15 @@
 							<td><input type="password" name = "password" placeholder="********"></td>
 						</tr>
 					</table>
-					<input type="submit" class="btn btn-primary btn-warning" value="Login"/>
+					<input type="submit" class="btn btn-primary" value="Login"/>
 				</form>
 			</div>
 			
 			<div>
 				<table class="logintable">
 					<tr>
-						<td><a href = "registration.html">Having problem loggin in?&nbsp&nbsp&nbsp&nbsp&nbsp</a></td>
+						<td><a href = "registration.html">Having problem loggin in?</a></td>
+						<td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
 						<td>	<?php echo anchor('login/signup', 'Create Account'); ?></td>
 					</tr>
 				<table>
